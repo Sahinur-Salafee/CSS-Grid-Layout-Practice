@@ -1,0 +1,17 @@
+/* 
+* Reference: https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px 100px;
+}
+
+h2 {
+  color: #000;
+}
