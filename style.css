@@ -9,7 +9,7 @@
 }
 
 body {
-  padding: 50px 100px;
+  padding: 50px 40px;
 }
 
 h2 {
@@ -21,10 +21,21 @@ h2 {
 }
 
 .item {
-  border: 1px solid #ccc;
-  padding: 10px;
+  padding: 20px;
+  background-color: rgb(112, 38, 251);
+  color: #fff;
+  font-size: 18px;
+}
+
+.item:nth-child(odd) {
+  background-color: rgb(232, 7, 235);
 }
 
 .container {
   display: grid;
+  /* grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr; */
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(4, 2fr);
+  gap: 5px;
 }
