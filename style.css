@@ -53,23 +53,38 @@ h2 {
   color: #fff;
 }
 
+.section-two .container {
+  height: 500px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-columns: repeat(12, 1fr); */
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m m c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
 .section-two .header {
   background-color: rgb(80, 192, 0);
+  /* grid-column: 1 / -1; */
+  grid-area: h;
 }
 
 .section-two .menu {
   background-color: rgb(223, 6, 6);
+  /* grid-column: 1 / span 2; */
+  grid-area: m;
 }
 
 .section-two .content {
   background-color: rgb(33, 51, 248);
+  /* grid-column: 3 / -1; */
+  grid-area: c;
 }
 
 .section-two .footer {
   background-color: rgb(245 129 20);
-}
-
-.section-two .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-column: 1 / span 12; */
+  grid-area: f;
 }
